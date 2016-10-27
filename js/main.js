@@ -1,7 +1,7 @@
 window.onbeforeunload = function () {
-  // $(window).animate({
-  //     scrollTop: 0
-  // }, 0);
+  $(window).animate({
+      scrollTop: 0
+  }, 0);
 };
 
 $( document ).ready(function() {

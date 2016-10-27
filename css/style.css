@@ -54,7 +54,7 @@ ul.topnav li a:hover {
 }
 
 .nav-content {
-		margin-top:57px;
+		margin-top:50px;
 }
 
 .section {
@@ -184,7 +184,7 @@ footer {
 		color: white;
 		background-color: #67d3c9;
 		text-align: center;
-		font-size: 35px;
+		font-size: 30px;
 		font-weight: 800;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		padding-top: 24px;
@@ -313,9 +313,14 @@ footer {
 		font-size: 30px;
 }
 
+.xs-skills { display: none; }
+
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home").
 	 Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
+	.md-skills { display: none; }
+	.xs-skills { display: block; }
+
 	#about.section, #work.section, #contact.section {
 		height: auto;
 	}
@@ -340,4 +345,27 @@ footer {
     display: block;
     text-align: center;
   }
+
+	.skillspage .xs-skills .progress-bar {
+		margin-left: 10px;
+		background-color: #67d3c9;
+	}
+
+	.skillspage .skill-graph {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.skillspage .skill-graph .skill-graph-title {
+		font-size: 15px;
+		font-weight: 600;
+		margin: 0 0 5px 10px;
+		text-align: left;
+	}
+
+	.skillspage .skill-graph .sr-only {
+		font-size: 15px;
+		font-weight: 600;
+		position: relative;
+	}
 }

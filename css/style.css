@@ -207,16 +207,22 @@ footer {
 		line-height: 1.5;
 }
 
-.expand-icon {
+.card-footer .expand-icon {
 	position: absolute;
   bottom: 10px;
   right: 45px;
   cursor: pointer;
 }
 
-.expand-icon img {
+.card-footer .expand-icon img {
 	width: 30px;
 	height: 30px;
+}
+
+.card-footer a {
+	position: absolute;
+  left: 45px;
+  bottom: 10px;
 }
 
 /* The Modal (background) */

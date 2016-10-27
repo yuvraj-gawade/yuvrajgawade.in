@@ -87,7 +87,7 @@ ul.topnav li a:hover {
 
 .landingpage .overlay {
 	background-color: black;
-	opacity: 0.8;
+	opacity: 0.75;
 	height: 600px;
 }
 
@@ -373,5 +373,16 @@ footer {
 		margin-left: 10px;
 		font-size: 25px;
     padding-bottom: 20px;
+	}
+
+	.workpage .card {
+		height:210px;
+	}
+
+	.workpage .card .card-header {
+		height: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 10px;
 	}
 }

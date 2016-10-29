@@ -45,7 +45,7 @@ ul.topnav li a:hover {
 }
 
 #work.section {
-	height: 700px;
+	height: 1000px;
 }
 
 #contact.section {
@@ -178,11 +178,11 @@ footer {
 }
 
 .card-header {
-		height: 100px;
+		height: 85px;
 		color: white;
 		background-color: #67d3c9;
 		text-align: center;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 800;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		padding-top: 24px;
@@ -313,6 +313,59 @@ footer {
 
 .xs-skills { display: none; }
 
+.contact-form .container form {
+		width: 80%;
+    margin: 0 auto;
+    text-align: center;
+		margin-bottom: 15px;
+}
+
+.contact-form .container form input, .contact-form .container form textarea {
+	width: 55%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 30px;
+}
+
+.contact-form .container form input:focus, .contact-form .container form textarea:focus {
+	border: 0px;
+	border-bottom: 2px solid #67d3c9;
+	outline-width: 0;
+}
+
+.contact-form .container form button.sendBtn {
+	height: 55px;
+  width: 135px;
+  margin: 0 auto;
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #67d3c9;
+	border: solid 2px #67d3c9;
+}
+
+.contact-form .container form button.sendBtn:hover {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.contact-form .container .success {
+	display: none;
+	font-size: 15px;
+	text-align: Center;
+	background-color: #9ed79e;
+	width: 50%;
+	margin: 0 auto 30px auto;
+	padding: 10px;
+	color: #42a142;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.contact-form .container form input.error {
+	border-bottom: 2px solid red;
+}
+
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home").
 	 Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
@@ -383,5 +436,13 @@ footer {
     font-size: 25px;
     font-weight: 600;
     padding-top: 10px;
+	}
+
+	.contact-form .container form input, .contact-form .container form textarea {
+    width: 85%;
+	}
+
+	.contact-form .container .success {
+		width: 50%;
 	}
 }

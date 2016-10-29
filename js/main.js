@@ -158,4 +158,53 @@ $( document ).ready(function() {
     $('.clsBtn').on('click', function () {
       $('.modal').css('display', 'none');
     });
+
+    var form = $('form[name="contact"]');
+    //contact form
+    $(form).submit( function(e) {
+        // Prevent our browser from submitting our form in
+        // the traditional way
+        e.preventDefault();
+
+        var name  = $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var msg   = $('input[name="message"]').val();
+
+        if( (name ? false : true) ) {
+          $('input[name="name"]').addClass('error');
+          return;
+        } else {
+          $('input[name="name"]').removeClass('error');
+        }
+
+        if( (email ? false : true) ) {
+          $('input[name="email"]').addClass('error');
+          return;
+        } else {
+          $('input[name="email"]').removeClass('error');
+        }
+
+        if( (msg ? false : true) ) {
+          $('input[name="msg"]').addClass('error');
+          return;
+        } else {
+          $('input[name="email"]').removeClass('error');
+        }
+
+        // Send Json data to email.php
+        var formData = $(form).serialize();
+				$.ajax({
+  					type: "POST",
+  					url: $(form).attr('action'),
+  					data: formData,
+  					success: function() {
+              $('input[type="text"]').val('');
+
+              $('.success').fadeIn(2000);
+              setTimeout( function() {
+                $('.success').fadeOut(2000);
+              }, 3000);
+            }
+				});
+    });
 });

@@ -198,6 +198,7 @@ $( document ).ready(function() {
   					data: formData,
   					success: function() {
               $('input[type="text"]').val('');
+              $('textarea[type="text"]').val('');
 
               $('.success').fadeIn(2000);
               setTimeout( function() {

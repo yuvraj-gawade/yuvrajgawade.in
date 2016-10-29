@@ -362,7 +362,7 @@ footer {
 	border-radius: 5px;
 }
 
-.contact-form .container form input.error {
+.contact-form .container form input.error, textarea.error {
 	border-bottom: 2px solid red;
 }
 
@@ -443,6 +443,6 @@ footer {
 	}
 
 	.contact-form .container .success {
-		width: 50%;
+		width: 80%;
 	}
 }

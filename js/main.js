@@ -168,7 +168,7 @@ $( document ).ready(function() {
 
         var name  = $('input[name="name"]').val();
         var email = $('input[name="email"]').val();
-        var msg   = $('input[name="message"]').val();
+        var msg   = $('textarea[name="message"]').val();
 
         if( (name ? false : true) ) {
           $('input[name="name"]').addClass('error');
@@ -185,13 +185,12 @@ $( document ).ready(function() {
         }
 
         if( (msg ? false : true) ) {
-          $('input[name="msg"]').addClass('error');
+          $('textarea[name="message"]').addClass('error');
           return;
         } else {
-          $('input[name="email"]').removeClass('error');
+          $('textarea[name="message"]').removeClass('error');
         }
 
-        // Send Json data to email.php
         var formData = $(form).serialize();
 				$.ajax({
   					type: "POST",

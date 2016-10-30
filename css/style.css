@@ -47,7 +47,7 @@ ul.topnav li.li-nav a:hover {
      margin-left: 0px;
 }
 
-.section {
+#about.section, #work.section, #skills.section, #contact.section{
 	margin: 0 10px 0 10px;
 }
 
@@ -393,6 +393,8 @@ footer {
 		height: auto;
 	}
 
+	.expand-icon { display: none; }
+
 	ul.topnav li.li-nav { display: none; }
   ul.topnav li.icon {
     float: right;
@@ -437,8 +439,7 @@ footer {
 	}
 
 	.section h2 {
-		margin-left: 10px;
-		font-size: 25px;
+		font-size: 20px;
     padding-bottom: 20px;
 	}
 

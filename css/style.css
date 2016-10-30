@@ -49,7 +49,7 @@ ul.topnav li a:hover {
 }
 
 #contact.section {
-	height: 500px;
+	height: 525px;
 }
 
 .nav-content {
@@ -122,9 +122,17 @@ ul.topnav li a:hover {
 }
 
 .contactpage .social-media-icon img {
-	width:100px;
-	height:100px;
-	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+	margin: 10px 20px 0 0;
+}
+
+.contactpage .connect-me {
+	margin: 20px 0 20px 0;
+}
+
+.contactpage .connect-me .connect-me-header {
+	font-size: 17px;
 }
 
 #return-to-top {

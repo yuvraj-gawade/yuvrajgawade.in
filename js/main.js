@@ -20,10 +20,12 @@ $( document ).ready(function() {
     });
 
     $('ul.topnav li.icon').on('click', function() {
+      $('ul.topnav li.icon a').toggleClass('selected');
       $('.topnav').toggleClass('responsive');
     });
 
     $('body').on('click', '.responsive li.li-nav', function() {
+      $('ul.topnav li.icon a').toggleClass('selected');
       $('.topnav').toggleClass('responsive');
     });
 

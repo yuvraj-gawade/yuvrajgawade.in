@@ -35,9 +35,20 @@ ul.topnav li a {
 		font-weight: 600;
 }
 
-ul.topnav li a:hover {
+ul.topnav li.li-nav a:hover {
   border-bottom: 5px solid #67d3c9;
   background-color: transparent;
+}
+
+.container {
+     padding-right: 0px;
+		 padding-left: 0px;
+     margin-right: 0px;
+     margin-left: 0px;
+}
+
+.section {
+	margin: 0 10px 0 10px;
 }
 
 #about.section {
@@ -54,11 +65,6 @@ ul.topnav li a:hover {
 
 .nav-content {
 		margin-top:50px;
-}
-
-.section {
-  height:auto;
-  margin-right: 0px;
 }
 
 .section h2 {
@@ -381,6 +387,8 @@ footer {
 	.md-skills { display: none; }
 	.xs-skills { display: block; }
 
+	ul.topnav li.icon a.selected { color: #67d3c9 }
+
 	#about.section, #work.section, #contact.section {
 		height: auto;
 	}
@@ -407,7 +415,6 @@ footer {
   }
 
 	.skillspage .xs-skills .progress-bar {
-		margin-left: 10px;
 		background-color: #67d3c9;
 	}
 

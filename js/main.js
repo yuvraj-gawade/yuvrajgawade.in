@@ -143,22 +143,27 @@ $( document ).ready(function() {
     //events for project detaials actions
     $('#proj1').on( 'click', function() {
       $('#proj1Details').css('display', 'block');
+      $('body').css('overflow', 'hidden');
     });
 
     $('#proj2').on( 'click', function() {
       $('#proj2Details').css('display', 'block');
+      $('body').css('overflow', 'hidden');
     });
 
     $('#proj3').on( 'click', function() {
       $('#proj3Details').css('display', 'block');
+      $('body').css('overflow', 'hidden');
     });
 
     $('#proj4').on( 'click', function() {
       $('#proj4Details').css('display', 'block');
+      $('body').css('overflow', 'hidden');
     });
 
     $('.clsBtn').on('click', function () {
       $('.modal').css('display', 'none');
+      $('body').css('overflow', 'auto');
     });
 
     var form = $('form[name="contact"]');
